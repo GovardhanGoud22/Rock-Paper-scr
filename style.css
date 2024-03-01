@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+}
+#navbar{
+    height:60px;
+    width:100vw;
+    background-color: #081b31;
+    color:white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    margin-top: 5rem;
+
+}
+.choice{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: #07c7f7;
+}
+#rock{
+    transition: all 0.2s ease-in-out;
+}
+#rock:hover{
+    background-color: #ec62b3;
+}
+#scissor{
+    transition: all 0.2s ease-in-out; 
+}
+#scissor:hover{
+    background-color: rgb(245, 223, 25);
+}
+img{
+    height:180px;
+    width:180px;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline;
+    object-fit: cover;
+}
+.score-board{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap:5rem;
+    font-size: 2rem;
+
+}
+.score{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#yourscore,#compscore{
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
+.msg-container{
+    margin-top: 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2rem;
+
+}
+#msg{
+    
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+    display: inline;
+}
+
+#footer{
+    height:100px;
+    background-color: #262727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    font-size: 1rem;
+}
+#logo{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+ /* ----------------------MEDIA - QUERIES------------------------ */
+@media (max-width:550px){
+    .choices{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap:2rem;
+        margin-top: 3rem;
+    
+    }
+    .choice{
+        height:150px;
+        width:150px;
+        border-radius: 50%;
+    }
+    img{
+        height:140px;
+        width:140px;
+        background-size: cover;
+        border-radius: 50%;
+        display: inline;
+        object-fit: cover;
+    }
+    #msg{
+        font-size: 1.2rem;
+    }
+    #yourscore,#compscore{
+        font-size: 2.5rem;
+        font-weight: 600;
+    
+    }
+    .score-board{
+    margin-top: 3rem;
+    gap:5rem;
+    font-size: 1.5rem;
+    }
+}
